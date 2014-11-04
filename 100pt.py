@@ -28,7 +28,9 @@ class MyApp:
 		
 	        # Add a second button!
 				
-		
+		self.button2 = Button(self.myContainer1)
+		self.button2.configure(text="Right", background= "green")
+		self.button2.grid(row=0,column=2)
 						
 		# "Bind" an action to the first button												
 		self.button1.bind("<Button-1>", self.button1Click)
