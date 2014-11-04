@@ -35,6 +35,7 @@ class MyApp:
 		# "Bind" an action to the first button												
 		self.button1.bind("<Button-1>", self.button1Click)
 		# Create the code to bind an action to the second button
+		self.button2.bind("<Button-1>", self.button2Click)
 		# Do not change "<Button-1>"
 		 
 		  
@@ -50,6 +51,9 @@ class MyApp:
 		global drawpad
 	
 	# Add the event handler for the second button to make it move right!
+	def button2Click(self, event):
+                global oval
+		global drawpad
 	
 		
 myapp = MyApp(root)
