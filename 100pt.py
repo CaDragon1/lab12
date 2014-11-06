@@ -49,12 +49,15 @@ class MyApp:
                 # "global" makes sure that we can access our oval and our drawpad
 		global oval
 		global drawpad
+		
+		drawpad.move(oval, -20, 0)
 	
 	# Add the event handler for the second button to make it move right!
 	def button2Click(self, event):
                 global oval
 		global drawpad
 	
+		drawpad.move(oval, 20, 0)
 		
 myapp = MyApp(root)
 root.mainloop()
